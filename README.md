@@ -18,7 +18,7 @@ projects without overwhelming the working context.
 
 ## Quick Start
 
-Install global Codex rules:
+Install global Codex rules and the engineering-practices skill:
 
 ```bash
 scripts/install-codex.sh
