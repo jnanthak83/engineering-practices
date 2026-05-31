@@ -12,7 +12,7 @@ projects without overwhelming the working context.
 - Global Codex instructions for `~/.codex/AGENTS.md`
 - Global Claude Code instructions for `~/.claude/CLAUDE.md`
 - Project-level `AGENTS.md` and `CLAUDE.md` templates
-- A Codex skill for engineering-practices-aware reviews and implementation
+- Codex and Claude skills for engineering-practices-aware reviews and implementation
 - PR, review, handoff, and multi-agent worker prompt templates
 - Install scripts for new and existing projects
 
@@ -24,7 +24,7 @@ Install global Codex rules:
 scripts/install-codex.sh
 ```
 
-Install global Claude rules:
+Install global Claude rules and the engineering-practices skill:
 
 ```bash
 scripts/install-claude.sh
