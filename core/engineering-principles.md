@@ -26,3 +26,5 @@ security, privacy, or testability.
 - Keep commits atomic and descriptive.
 - Include a handoff with files changed, checks run, risks, and recommended next
   step.
+- For meaningful work, separate planning, implementation, review, correction,
+  validation, and supervision across distinct agent passes.

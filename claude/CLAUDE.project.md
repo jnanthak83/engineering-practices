@@ -27,6 +27,16 @@ Every handoff must include:
 - Risks or follow-up
 - Recommended next issue
 
+## Multi-Agent Workflow
+
+When assigned a role, stay inside it:
+
+- Planner: split work into small issues.
+- Implementation worker: implement one issue.
+- Review worker: review only; do not patch silently.
+- Correction worker: fix accepted review findings only.
+- Validation worker: rerun checks and report exact results.
+
 ## Local Overrides
 
 Add project-specific stack, test, build, and release instructions below this

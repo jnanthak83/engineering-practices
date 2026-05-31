@@ -29,6 +29,12 @@ Every agent handoff must include:
 - Risks or follow-up
 - Recommended next issue
 
+## Multi-Agent Workflow
+
+For larger features, use separate agents for planning, implementation, review,
+correction, and validation. Implementation agents do not approve their own PRs.
+Review agents review only unless the supervisor explicitly assigns correction.
+
 ## Local Overrides
 
 Add project-specific stack, test, build, and release instructions below this

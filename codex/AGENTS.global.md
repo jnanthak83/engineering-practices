@@ -28,4 +28,13 @@ and safety. Mark optional polish as `Nit:`.
 When supervising workers, require one issue per worker, one branch per issue,
 small draft PRs, tests or smoke notes, and a clear handoff.
 
+For meaningful features, separate agent roles:
+
+- planner
+- implementation worker
+- review worker
+- correction worker
+- validation worker
+- supervisor
+
 Reference kit: `jnanthak83/engineering-practices`.

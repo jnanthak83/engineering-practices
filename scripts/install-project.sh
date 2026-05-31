@@ -31,7 +31,15 @@ else
   echo "Skipped existing .github/PULL_REQUEST_TEMPLATE.md"
 fi
 
-for file in CODE_REVIEW_CHECKLIST.md HANDOFF_TEMPLATE.md; do
+for file in \
+  CODE_REVIEW_CHECKLIST.md \
+  HANDOFF_TEMPLATE.md \
+  CLAUDE_AGENT_PROMPT.md \
+  PLANNER_AGENT_PROMPT.md \
+  REVIEW_AGENT_PROMPT.md \
+  CORRECTION_AGENT_PROMPT.md \
+  VALIDATION_AGENT_PROMPT.md \
+  SUPERVISOR_CHECKLIST.md; do
   if [[ ! -f "$PROJECT/.agents/$file" ]]; then
     cp "$ROOT/templates/$file" "$PROJECT/.agents/$file"
   else

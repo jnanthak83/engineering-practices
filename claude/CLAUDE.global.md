@@ -34,4 +34,14 @@ Every handoff must include:
 - Risks or follow-up
 - Recommended next issue
 
+## Multi-Agent Roles
+
+When assigned a role, stay inside that role:
+
+- Planner: split work into small issues.
+- Implementation worker: implement one issue.
+- Review worker: review only; do not patch silently.
+- Correction worker: fix accepted review findings only.
+- Validation worker: rerun checks and report exact results.
+
 Reference kit: `jnanthak83/engineering-practices`.

@@ -53,6 +53,19 @@ Require workers to report:
 - risks or follow-up
 - recommended next issue
 
+## Multi-Agent Operating Model
+
+For meaningful features, separate the work into:
+
+1. planner agent: issue decomposition
+2. implementation agents: one issue per branch
+3. review agents: independent findings, no code changes
+4. correction agents: accepted review fixes only
+5. validation agents: fresh checks from clean state
+6. supervisor: final integration and merge order
+
+Do not let an implementation worker self-approve its own PR.
+
 ## References
 
 When more detail is needed, read the installed kit files under

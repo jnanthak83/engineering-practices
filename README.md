@@ -13,7 +13,7 @@ projects without overwhelming the working context.
 - Global Claude Code instructions for `~/.claude/CLAUDE.md`
 - Project-level `AGENTS.md` and `CLAUDE.md` templates
 - A Codex skill for engineering-practices-aware reviews and implementation
-- PR, review, and handoff templates
+- PR, review, handoff, and multi-agent worker prompt templates
 - Install scripts for new and existing projects
 
 ## Quick Start
@@ -44,6 +44,19 @@ scripts/install-project.sh /path/to/project
 4. Separate behavior changes from refactors.
 5. Require fresh verification before claiming success.
 6. Use agent handoffs that include scope, files, tests, risks, and next steps.
+
+## Multi-Agent Workflows
+
+The kit is designed for supervisor-led agent work:
+
+- **Supervisor:** owns architecture, sequencing, final review, and merge.
+- **Planner:** splits a spec into small issues.
+- **Implementation workers:** build one issue per branch.
+- **Review workers:** independently review PRs.
+- **Correction workers:** address accepted review findings.
+- **Validation workers:** rerun tests, build, and smoke checks.
+
+Install the project kit to get reusable prompts in `.agents/`.
 
 ## Attribution
 
